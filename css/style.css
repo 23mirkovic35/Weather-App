@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(35, 78, 176);
+}
+
+.wrapper{
+    position: relative;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.wrapper .logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .logo-container .logo-text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    position: relative;
+    margin-top: -10px;
+}
+.wrapper .logo-container .logo-text .by{
+    font-size: 12px;
+    position: absolute;
+    right: -15px;
+    opacity: 0.5;
+}
+.wrapper .line{
+    height: 1.5px;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: silver;
+}
+.wrapper .location-container{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+.wrapper .location-container .current-location{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.wrapper .location-container .current-location .name{
+    font-size: 14px;
+    color: rgb(90, 90, 90);
+    margin-left: 5px;
+}
+.wrapper .location-container .current-location i{
+    color: rgb(90, 90, 90);
+}
+.wrapper .location-container .search-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    background-color: rgb(17, 121, 156);
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.wrapper .location-container .search-box i.uil-search{
+    display: none;
+    color:white;
+}
+.wrapper .location-container .search-box i.uil-search.show{
+    display: block;
+}
+.wrapper .location-container .search-box i.uil-multiply{
+    display: none;
+}
+.wrapper .location-container .search-box i.uil-multiply.show{
+    display: block;
+    color: white;
+}
+.wrapper .location-container .search-box .input{
+    display: none;
+    position: absolute;
+    top: calc(100% - 2px);
+    right: 0;
+    background-color: rgb(15, 74, 97);
+    padding: 5px;
+    width: 230px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: show-input 0.5s;
+}
+.wrapper .location-container .search-box .input.show{
+    display: block;
+}
+.wrapper .location-container .search-box .input input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+}
+.wrapper .weather-info{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .weather-info .left .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .weather-info .left .top .temperature-container{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.wrapper .weather-info .left .bottom{
+    font-size: 14px;
+    color: silver;
+    margin-top: -15px;
+    text-align: center;
+}
+.wrapper .weather-info .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.wrapper .weather-info .right .humidity,
+.wrapper .weather-info .right .feels-like{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.wrapper .weather-info .right .humidity .text,
+.wrapper .weather-info .right .feels-like .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .weather-info .right .humidity .proc,
+.wrapper .weather-info .right .feels-like .temp{
+    font-weight: 600;
+}
+.wrapper .weather-info .right .humidity .text .title,
+.wrapper .weather-info .right .feels-like .text .title{
+    font-size: 10px;
+    color: silver;
+}
+@keyframes show-input{
+    0%{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+}

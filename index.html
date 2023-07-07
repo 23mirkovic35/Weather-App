@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="assets/logo.png" height="50px">
+            </div>
+            <div class="logo-text">
+                Weather App 
+                <div class="by">by 23mirkovic35</div>
+            </div>
+        </div>
+        <span class="line"></span>
+        <div class="location-container">
+            <div class="current-location">
+                <div class="icon"><i class="uil uil-map-marker"></i></div>
+                <div class="name"></div>
+            </div>
+            <div class="search-box">
+                <div class="icon">
+                    <i class="uil uil-search show"></i>
+                    <i class="uil uil-multiply"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Enter city name">
+                </div>
+            </div>
+        </div>
+        <div class="weather-info">
+            <div class="current-weather">
+                <div class="left">
+                    <div class="top">
+                        <div class="image">
+                            <img src="" height="80px">
+                        </div>
+                        <div class="temperature-container">
+                            <span class="temperature"></span>&deg;
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="description"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="humidity">
+                        <div class="img">
+                            <img src="assets/humidity.png" height="45px">
+                        </div>
+                        <div class="text">
+                            <div class="proc">
+                                <span class="value"></span>%
+                            </div>
+                            <div class="title">
+                                humidity
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feels-like">
+                        <div class="image">
+                            <img src="assets/feels_like.png" height="45x">
+                        </div>
+                        <div class="text">
+                            <div class="temp">
+                                <span class="value"></span>&deg;
+                            </div>
+                            <div class="title">feels like</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
